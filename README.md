@@ -1,4 +1,4 @@
-## Project - RealEstate Website Backend with MongoDB,Express.js,Node.js
+## Project - RealEstate Website Backend with MongoDB,Express.js,Node.js,AWS S3,AWS SNS
 
 ## Description
 - This is the RealEstate Website Backend project ,where the users  can create an account and they need to verify there account by using otp that sent to there mobile number , user can post the property (like ads) if the user is want to sale or rent a property , users can show  interest to a property and the interested users  contacts will sent to the owner
@@ -55,10 +55,10 @@
 - Search a  residental property for rent ,by taking the input for filter i.e city,locality,Apartmet type,BHK type
 ### GET '/:city/residental-resale'
 - Search a  residental property for resale ,by taking the input for filter i.e city,locality,Apartmet type,BHK type
-### Post /user/:userId/residential-rent/:propertyId (Authentication and Authorization required)
+### Post /user/:userId/residential-rent-interest/:propertyId (Authentication and Authorization required)
 - User can show the interest to a property and user details we sent to property owner through SMS(mobile)
 - UserId and propertyId in params
-### Post /user/:userId/residential-resale/:propertyId (Authentication and Authorization required)
+### Post /user/:userId/residential-resale-interest/:propertyId (Authentication and Authorization required)
 - User can show the interest to a property and user details we sent to property owner through SMS(mobile)
 - UserId and propertyId in params
 
@@ -87,9 +87,9 @@
 - Search a  residental property for rent ,by taking the input for filter i.e city,locality,Apartmet type,BHK type
 ### GET '/:city/commercial-resale'
 - Search a  residental property for resale ,by taking the input for filter i.e city,locality,Apartmet type,BHK type
-### Post /user/:userId/commercial-rent/:propertyId (Authentication and Authorization required)
+### Post /user/:userId/commercial-rent-interest/:propertyId (Authentication and Authorization required)
 - User can show the interest to a property and user details we sent to property owner through SMS(mobile)
 - UserId and propertyId in params
-### Post /user/:userId/commercial-resale/:propertyId (Authentication and Authorization required)
+### Post /user/:userId/commercial-resale-interest/:propertyId (Authentication and Authorization required)
 - User can show the interest to a property and user details we sent to property owner through SMS(mobile)
 - UserId and propertyId in params
