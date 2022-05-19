@@ -20,7 +20,7 @@ router.get('/test', () =>{
 
 /**************************************Users APIs*********************************************** */
 router.post('/register', userController.createUser)
-router.post('/otp-generator', userController.optGenerator)
+router.get('/otp-generator', userController.optGenerator)
 router.post('/account-verification',userController.accountVerification)
 router.post('/login',userController.login)
 
@@ -53,6 +53,8 @@ router.get('/:city/commercial-rent',geoCoderSearch.geocode,commercailRentSearchC
 router.get('/:city/commercial-resale',geoCoderSearch.geocode,commercailResaleSearchController.commericalResaleSearch)
 router.post('/user/:userId/commercial--rent-interest/:propertyId',authMiddleWare.auth, commercailRentSearchController.commercialRentinterest)
 router.post('/user/:userId/commercial--resale-interest/:propertyId',authMiddleWare.auth, commercailResaleSearchController.commercialResaleinterest)
+
+
 
 
 module.exports = router

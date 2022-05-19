@@ -23,7 +23,7 @@
 ## USER APIs
 ### POST /register
 - Registering  to the RealEstate Website
-### POST /otp-generator
+### GET /otp-generator
 - Generatoring the OTP for account-verification or login
 - OTP will delete after 5 Min from our database
 ### POST /account-verification
